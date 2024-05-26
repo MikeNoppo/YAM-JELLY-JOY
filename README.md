@@ -1,2 +1,0 @@
-# YAM-JELLY-JOY
-nyanye
