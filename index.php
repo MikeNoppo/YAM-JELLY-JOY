@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="img/logo yamjellyjoy.png" rel="icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>YAMJELLYJOY</title>
+    <title>YAM JELLYJOY - log in or sign up</title>
 </head>
 <body>
     <div class="container">
@@ -21,20 +22,11 @@
                         <i class="fas fa-lock"></i>
                         <input type="password" name="password" placeholder="Password" required>
                     </div>
-                    <input type="submit" value="Login" class="btn solid">
-                    <p class="social-text">Kunjungi Social Media Kami!</p>
+                    <input type="submit" value="Log in" class="btn solid">
+                    <p class="social-text">Follow us on social media!</p>
                     <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
                         <a href="https://www.instagram.com/yam.jellyjoy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">
                             <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </form>
@@ -60,23 +52,21 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>New here ?</h3>
+                    <h3>New here?</h3>
                     <p>
-                        Ayo Bergabung jadi member Kami!
+                        Join us and become a member!
                     </p>
                     <button class="btn transparent" id="sign-up-btn">Sign up</button>
-                </div>
-                <img src="img/log.svg" class="image" alt="">
+                </div>  
             </div>
             <div class="panel right-panel">
                 <div class="content">
-                    <h3>One of us ?</h3>
+                    <h3>Already have an account?</h3>
                     <p>
-                        Sudah Punya akun? Log in!
+                        Log in now!
                     </p>
                     <button class="btn transparent" id="sign-in-btn">Sign in</button>
                 </div>
-                <img src="img/register.svg" class="image" alt="">
             </div>
         </div>
     </div>

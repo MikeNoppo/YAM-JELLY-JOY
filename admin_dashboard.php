@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Admin/style.css">
-    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+    <title>YAM JELLYJOY - Dashboard</title>
 </head>
 
 <body>
@@ -14,13 +14,12 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <a href="#" class="logo">
-            <i class='bx bx-code-alt'></i>
-            <div class="logo-name"><span>Asmr</span>Prog</div>
+            <div class="logo-name"><span>YAM JELLYJOY</span></div>
         </a>
         <ul class="side-menu">
             <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-            <li><a href="#"><i class='bx bx-store-alt'></i>Shop</a></li>
-            <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
+            <li><a href="shop.html"><i class='bx bx-store-alt'></i>Shop</a></li>
+            <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></>
             <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
             <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
             <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
@@ -64,57 +63,15 @@
             <div class="header">
                 <div class="left">
                     <h1>Dashboard</h1>
-                    <ul class="breadcrumb">
-                        <li><a href="#">
-                                Analytics
-                            </a></li>
-                        /
-                        <li><a href="#" class="active">Shop</a></li>
-                    </ul>
+                    <hr>
                 </div>
-                <a href="#" class="report">
-                    <i class='bx bx-cloud-download'></i>
-                    <span>Download CSV</span>
-                </a>
             </div>
 
-            <!-- Insights -->
-            <ul class="insights">
-                <li>
-                    <i class='bx bx-calendar-check'></i>
-                    <span class="info">
-                        <h3>
-                            1,074
-                        </h3>
-                        <p>Paid Order</p>
-                    </span>
-                </li>
-                <li><i class='bx bx-show-alt'></i>
-                    <span class="info">
-                        <h3>
-                            3,944
-                        </h3>
-                        <p>Site Visit</p>
-                    </span>
-                </li>
-                <li><i class='bx bx-line-chart'></i>
-                    <span class="info">
-                        <h3>
-                            14,721
-                        </h3>
-                        <p>Searches</p>
-                    </span>
-                </li>
-                <li><i class='bx bx-dollar-circle'></i>
-                    <span class="info">
-                        <h3>
-                            $6,742
-                        </h3>
-                        <p>Total Sales</p>
-                    </span>
-                </li>
-            </ul>
-            <!-- End of Insights -->
+            <!-- moving text -->
+            <h1 class="moving-text">
+                 Hello!
+            </h1>
+            <!-- moving text -->
 
             <div class="bottom-data">
                 <div class="orders">
@@ -165,7 +122,7 @@
                 <div class="reminders">
                     <div class="header">
                         <i class='bx bx-note'></i>
-                        <h3>Remiders</h3>
+                        <h3>Reminders</h3>
                         <i class='bx bx-filter'></i>
                         <i class='bx bx-plus'></i>
                     </div>
@@ -184,10 +141,10 @@
                             </div>
                             <i class='bx bx-dots-vertical-rounded'></i>
                         </li>
-                        <li class="not-completed">
+                        <li class="completed">
                             <div class="task-title">
-                                <i class='bx bx-x-circle'></i>
-                                <p>Play Footbal</p>
+                                <i class='bx bx-check-circle'></i>
+                                <p>Meet to Place and Order For Soup Jelly Ball</p>
                             </div>
                             <i class='bx bx-dots-vertical-rounded'></i>
                         </li>
