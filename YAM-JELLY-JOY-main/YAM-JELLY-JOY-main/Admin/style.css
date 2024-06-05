@@ -345,7 +345,7 @@ body{
 }
 
 .content nav #theme-toggle:checked + .theme-toggle::before {
-    left: 2px;
+    left: calc(100% - 25px);
 }
 
 .content main{
@@ -353,22 +353,6 @@ body{
     padding: 36px 24px;
     max-height: calc(100vh - 56px);
 }
-
-.content main .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-gap: 16px;
-    flex-wrap: wrap;
-}
-
-.content main .header .left h1{
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: var(--white);
-}
-
 
 .content main .bottom-data{
     display: flex;

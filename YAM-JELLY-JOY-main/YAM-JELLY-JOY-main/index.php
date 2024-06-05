@@ -1,76 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="img/logo yamjellyjoy.png" rel="icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>YAM JELLYJOY - log in or sign up</title>
-</head>
-<body>
-    <div class="container">
-        <div class="forms-container">
-            <div class="signin-signup">
-                <form action="login.php" method="POST" class="sign-in-form">
-                    <h2 class="title">Sign in</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username" placeholder="Username" required>
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" name="password" placeholder="Password" required>
-                    </div>
-                    <input type="submit" value="Log in" class="btn solid">
-                    <p class="social-text">Follow us on social media!</p>
-                    <div class="social-media">
-                        <a href="https://www.instagram.com/yam.jellyjoy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </form>
-                <form action="register.php" method="POST" class="sign-up-form">
-                    <h2 class="title">Sign up</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username" placeholder="Username" required>
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" name="password" placeholder="Password" required>
-                    </div>
-                    <input type="submit" class="btn" value="Sign up">
-                </form>
-            </div>
-        </div>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="panels-container">
-            <div class="panel left-panel">
-                <div class="content">
-                    <h3>New here?</h3>
-                    <p>
-                        Join us and become a member!
-                    </p>
-                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
-                </div>  
-            </div>
-            <div class="panel right-panel">
-                <div class="content">
-                    <h3>Already have an account?</h3>
-                    <p>
-                        Log in now!
-                    </p>
-                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="landing page\img\logo yamjellyjoy.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="landing page\css\styles.css">
+
+        <title>YAM JELLYJOY</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="landing page\img\logo yamjellyjoy.png" alt="logo image">
+                    YAM JELLYJOY
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#reviews" class="nav__link">Reviews</a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#recently" class="nav__link">Recently</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="login admin.php" class="nav__link">Login as Admin</a>
+                        </li>
+
+                    </ul>
+                   </li> <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+
+                    <img src="landing page/assets/bunga 1.png" alt="nav image" class="nav__img-1">
+                    <img src="landing page/assets/bunga 2.png" alt="nav image" class="nav__img-2">
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+                <div class="nav__buttons">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i> 
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-apps-2-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+              <div class="home__container container grid">
+                <img src="landing page/assets/sop jelly ball.png" alt="home image" class="home__img">
+
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Fresh Sushi
+                    
+                        <div>
+                            <img src="landing page/assets/produk bulat.png" alt="home image">
+                            Sushi Food
+                        </div>
+                    </h1>
+
+                    <p class="home__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+
+                    <a href="#" class="button">
+                        Order Now
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+              </div>
+
+              <img src="landing page/assets/garis.png" alt="home image" class="home__img-garis-1">  
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container">
+                    <div class="about__data">
+                        <span class="section__subtitle">About Us</span>
+                        <h2 class="section__title about__title">
+                            <div>
+                                We Provide
+                                <img src="landing page/assets/jelly.png" alt="about image">                            
+                            </div>
+                    </div>
+
+                    Healthy Food
+                </h2>
+
+                <p class="about__description">
+                    Food comes to us from our relatives, whether they 
+                    have wings or roots. This is how we consider food, 
+                    it also has a culture. It has a history that passes 
+                    from generation to generation.
+                </p>
+                </div>
+
+                <img src="landing page/assets/bunga 1.png" alt="about image" class="about">
+            </div>
+
+            <img src="landing page/assets/bunga 2.png" alt="about image" class="about__bunga">
+            </section>
+
+            <!--==================== REVIEWS ====================-->
+            <section class="reviews section" id="reviews">
+                <span class="section__subtitle">The Best Food</span>
+                <h2 class="section__title">Popular Dishes</h2>
+
+                <div class="reviews__container container grid">
+                    <article class="reviews__card">
+                        <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
+
+                        <h3 class="reviews__name">Onigiri</h3>
+                        <span class="reviews__description">Japanese Dish</span>
+
+                        <span class="reviews__price">$10.99</span>
+
+                        <button class="reviews__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="reviews__card">
+                        <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
+
+                        <h3 class="reviews__name">Spring Rolls</h3>
+                        <span class="reviews__description">Japanese Dish</span>
+
+                        <span class="reviews__price">$15.99</span>
+
+                        <button class="reviews__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="reviews__card">
+                        <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
+
+                        <h3 class="reviews__name">Sushi Rolls</h3>
+                        <span class="reviews__description">Japanese Dish</span>
+
+                        <span class="reviews__price">$19.99</span>
+
+                        <button class="reviews__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== RECENTLY ====================-->
+            <section class="recently section" id="recently">
+                <div class="recently__container container grid">
+                    <div class="recently__data">
+                        <span class="section__subtitle">Recently Added</span>
+                        <h2 class="section__title">
+                            Sushi Samurai <br>
+                            Salmón Cheese
+                        </h2>
+
+                        <p class="recently__description">
+                            Take a look at what's new. And do not deprive 
+                            yourself of a good meal, enjoy and be happy.
+                        </p>
+
+                        <a href="#" class="button">
+                            Order Now <i class="ri-arrow-right-line"></i>
+                        </a>
+
+                        <img src="landing page/assets/buah naga.png" alt="recently image" class="recently__data-img">
+                    </div>
+
+                    <div class="bottom-data">
+                        <div class="orders">
+                            <div class="orders__header">
+                                <i class='bx bx-receipt'></i>
+                                <h3>Recent Orders</h3>
+                                <i class='bx bx-filter'></i>
+                                <i class='bx bx-search'></i>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Order Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="landing page/img/profile-1.jpg">
+                                            <p>John Doe</p>
+                                        </td>
+                                        <td>14-08-2023</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="landing page/img/profile-1.jpg">
+                                            <p>John Doe</p>
+                                        </td>
+                                        <td>14-08-2023</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="landing page/img/profile-1.jpg">
+                                            <p>John Doe</p>
+                                        </td>
+                                        <td>14-08-2023</td>
+                                        <td><span class="status process">Processing</span></td>
+                                    </tr>
+                                    <a class="button__recently">
+                                     Tersisa ... 
+                                    </a>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+
+                 <img src="landing page/assets/buah apel.png" alt="recently image" class="recently__apel"> 
+                 <img src="landing page/assets/buah naga.png" alt="recently image" class="recently__naga"> 
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="landing page/img/logo yamjellyjoy.png" alt="logo image">
+                        YAM JELLYJOY
+                    </a>
+
+                    <p class="footer__description">
+                        Food for the body is not <br>
+                        enough. There must be food <br>
+                        for the soul.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">Main Menu</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#about" class="footer__link">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Menus</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Address</h3>
+
+                        <ul class="footer__links">
+                            <li class="footer__information">
+                                Av. Hacienda 1234 <br>
+                                Lima 4321, Perú 
+                            </li>
+
+                            <li class="footer__information">
+                                9AM - 11PM
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Social Media</h3>
+
+                        <ul class="footer__social">
+                            <a href="https://www.instagram.com/yam.jellyjoy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+                <img src="landing page/assets/buah naga.png" alt="footer image" class="footer__naga">
+                <img src="landing page/assets/buah apel.png" alt="footer image" class="footer__apel">
+                <img src="landing page/assets/bunga 2.png" alt="footer image" class="footer__bunga">
+            </div>
+
+            <div class="footer__info container">
+                <div class="footer__card">
+                    <img src="landing page/assets/footer-card-1.png" alt="footer image">
+                    <img src="landing page/assets/footer-card-2.png" alt="footer image">
+                </div>
+
+                <span class="footer__copy">
+                    &copy; YAM JELLYJOY | All rights reserved
+                </span>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="landing page\js\scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="landing page\js\main.js"></script>
+    </body>
+</html></tr>
