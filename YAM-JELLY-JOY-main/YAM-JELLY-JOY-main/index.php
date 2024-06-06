@@ -1,3 +1,8 @@
+<?php
+require 'ambil_dataOders.php';
+
+?>
+
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -213,49 +218,39 @@
                     </div>
 
                     <div class="bottom-data">
-                        <div class="orders">
-                            <div class="orders__header">
-                                <i class='bx bx-receipt'></i>
-                                <h3>Recent Orders</h3>
-                                <i class='bx bx-filter'></i>
-                                <i class='bx bx-search'></i>
-                            </div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>User</th>
-                                        <th>Order Date</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <p>Do Kyungsoo</p>
-                                        </td>
-                                        <td>14-08-2023</td>
-                                        <td><span class="status completed">Completed</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>Sehun</p>
-                                        </td>
-                                        <td>14-08-2023</td>
-                                        <td><span class="status pending">Pending</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>Kai</p>
-                                        </td>
-                                        <td>14-08-2023</td>
-                                        <td><span class="status process">Processing</span></td>
-                                    </tr>
-                                    <a class="button__recently">
-                                     Tersisa ... 
-                                    </a>
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="orders">
+        <div class="orders__header">
+            <i class='bx bx-receipt'></i>
+            <h3>Recent Orders</h3>
+            <i class='bx bx-filter'></i>
+            <i class='bx bx-search'></i>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Order Date</th>
+                    <th>Status</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($orders as $order):
+                ?>
+                <tr>
+                    <td><p><?php echo htmlspecialchars($order['customer_name']); ?></p></td>
+                    <td><?php echo htmlspecialchars($order['order_date']); ?></td>
+                    <td><span class="status <?php echo strtolower(htmlspecialchars($order['status'])); ?>"><?php echo htmlspecialchars($order['status']); ?></span></td>
+                    <td><?php echo htmlspecialchars($order['quantity']); ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <a class="button__recently">
+            Tersisa ... 
+        </a>
+    </div>
                 </div>
 
                  <img src="landing page/assets/buah apel.png" alt="recently image" class="recently__apel"> 
