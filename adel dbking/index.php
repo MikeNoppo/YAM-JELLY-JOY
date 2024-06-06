@@ -1,6 +1,5 @@
 <?php
 require 'ambil_dataOders.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +15,7 @@ require 'ambil_dataOders.php';
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="landing page\css\styles.css">
+        <link rel="stylesheet" href="landing page/css/styles.css">
 
         <title>YAM JELLYJOY</title>
     </head>
@@ -82,16 +81,15 @@ require 'ambil_dataOders.php';
 
                 <div class="home__data">
                     <h1 class="home__title">
-                        Fresh Soup
-                    
+                        Fresh Jelly
                         <div>
                             <img src="landing page/assets/produk bulat.png" alt="home image">
-                            Jelly Ball
+                            Ball Soup
                         </div>
                     </h1>
 
                     <p class="home__description">
-                        Kelezatan Tanpa Batas, Sensasi Meledak di setiap Gigitan
+                    Infinite Deliciousness, Explosive Sensation In Every Bite
                     </p>
 
                     <a href="shop.php" class="button">
@@ -115,7 +113,9 @@ require 'ambil_dataOders.php';
                     </div>
             </h2>
             <p class="about__description">
-                Our team tries their best to provide deliciousness in every bite of Yam Jelly Joy that you eat.
+            YAM JellyJoy embodies the essence of our academic odyssey through the realm of entrepreneurship. 
+            Beyond imparting theoretical business acumen, the course ignited our passion to transform imaginative sparks into tangible endeavors. 
+            Guided by seasoned mentors and fueled by the camaraderie among peers, we embarked on a journey to establish a boutique enterprise centered around novel creations that invigorate and nourish.
             </p>
         </div>
         <div class="team__photos">
@@ -157,40 +157,38 @@ require 'ambil_dataOders.php';
                     <article class="reviews__card">
                         <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
 
-                        <h3 class="reviews__name">Original Yam Jelly Joy</h3>
-                        <span class="reviews__description">The original taste. A combination of fruit, jelly and milk</span>
-
-                        <span class="reviews__price">$10.99</span>
-
-                        <button class="reviews__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button>
+                        <h3 class="reviews__name">Flouresita Udampo</h3>
+                        <span class="reviews__description">This Jelly Ball Soup is truly delicious. It consists of a mixture of fruit, jelly, and milk</span>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </article>
                     </article>
 
                     <article class="reviews__card">
                         <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
 
-                        <h3 class="reviews__name">Extra Creamy Yam Jelly Joy</h3>
-                        <span class="reviews__description">Super Creamy because of produced by yogurt mixed with fruit and jelly</span>
-
-                        <span class="reviews__price">$15.99</span>
-
-                        <button class="reviews__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button>
+                        <h3 class="reviews__name">Anggraini Sumarno</h3>
+                        <span class="reviews__description">Super creamy because of produced by milk mixed with fruit and jelly</span>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
                     </article>
 
                     <article class="reviews__card">
                         <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
 
-                        <h3 class="reviews__name">Royal Cheesy Yam Jelly Joy</h3>
-                        <span class="reviews__description">The perfect blend of fruit, jelly and savory cream cheese</span>
-
-                        <span class="reviews__price">$19.99</span>
-
-                        <button class="reviews__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button>
+                        <h3 class="reviews__name">Kerenhapukh Waworuntu</h3>
+                        <span class="reviews__description">A perfect combination of fruit and jelly!</span>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
                     </article>
                 </div>
             </section>
@@ -201,13 +199,13 @@ require 'ambil_dataOders.php';
                     <div class="recently__data">
                         <span class="section__subtitle">Recently Added</span>
                         <h2 class="section__title">
-                            SOUP <br>
-                            JELLY BALL
+                            Jelly Ball<br>
+                            Soup
                         </h2>
 
                         <p class="recently__description">
-                        Rasakan kesegaran dan kelezatan di setiap gigitan. 
-                        Segera beli dan nikmati sensasi manis dan segar dari Soup Jelly Ball kami!
+                        Feel the freshness and deliciousness in every bite. 
+                        Hurry up and enjoy the sweet and fresh sensation of our Soup Jelly Ball!
                         </p>
 
                         <a href="shop.php" class="button">
@@ -269,27 +267,14 @@ require 'ambil_dataOders.php';
                     </a>
 
                     <p class="footer__description">
-                    Hanya memperhatikan makanan untuk tubuh tidaklah mencukupi. <br>
-                    Kita juga memerlukan asupan buah-buahan untuk kesehatan tubuh kita. <br>
-                    Mungkin soup buah jelly bisa menjadi pilihan yang sempurna sebagai hidangan penutup anda<br>
+                    Taking care of our body isn't just about the food we eat.<br> 
+                    We also need a healthy intake of fruits for our overall well-being.<br>
+                    Why not treat yourself to a delightful dessert that combines both?<br>
+                    A fruity jelly soup might just be the perfect choice to end your meal on a high note.
                     </p>
                 </div>
 
                 <div class="footer__content">
-                    <div>
-                        <h3 class="footer__title">Main Menu</h3>
-
-                        <ul class="footer__links">
-                            <li>
-                                <a href="#about" class="footer__link">About</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="footer__link">Menus</a>
-                            </li>
-                        </ul>
-                    </div>
-
                     <div>
                         <h3 class="footer__title">Address</h3>
 
@@ -315,9 +300,6 @@ require 'ambil_dataOders.php';
                         </ul>
                     </div>
                 </div>
-
-                <img src="landing page/assets/buah naga.png" alt="footer image" class="footer__naga">
-                <img src="landing page/assets/buah apel.png" alt="footer image" class="footer__apel">
                 <img src="landing page/assets/bunga 2.png" alt="footer image" class="footer__bunga">
             </div>
 
