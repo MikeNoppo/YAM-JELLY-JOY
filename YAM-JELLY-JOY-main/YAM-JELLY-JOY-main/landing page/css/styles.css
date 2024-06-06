@@ -144,7 +144,7 @@ body.dark-theme{
 }
 
 .dark-theme .bottom-data .orders table tr td .status.completed{
-  background: var(--success);
+  background: var(--success); 
 }
 
 .dark-theme .bottom-data .orders table tr td .status.process{
@@ -404,7 +404,7 @@ body.dark-theme{
 
 /*=============== ABOUT ===============*/
 .about{
-  position: relative;
+  padding: 2rem 0;
 }
 
 .about__container{
@@ -438,6 +438,42 @@ body.dark-theme{
   right: -1.5rem;
   bottom: 11rem;
   transform: rotate(-15deg);
+}
+
+.section__subtitle {
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  display: block;
+}
+
+.section__title {
+  font-size: var(--biggest-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.about__title img {
+  max-width: 100px;
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+.about__description {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.team__photos {
+  display: flex;
+  gap: 3rem;
+}
+
+.team__photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 /*=============== REVIEWS ===============*/
@@ -1187,6 +1223,8 @@ body.dark-theme{
     width: 450px;
   }
 
+  
+
   .reviews__container{
     grid-template-columns: repeat(3, 262px);
     column-gap: 3.5rem;
@@ -1405,4 +1443,8 @@ body.dark-theme{
     margin: 0 auto;
     width: 150px;
   }
+
+  .about__container {
+    text-align: center;
+}
 }

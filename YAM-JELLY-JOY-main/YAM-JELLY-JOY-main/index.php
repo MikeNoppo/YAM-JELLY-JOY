@@ -31,7 +31,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                            <a href="#about" class="nav__link">About Us</a>
                         </li>
 
                         <li class="nav__item">
@@ -77,20 +77,19 @@
 
                 <div class="home__data">
                     <h1 class="home__title">
-                        Fresh Sushi
+                        Fresh Soup
                     
                         <div>
                             <img src="landing page/assets/produk bulat.png" alt="home image">
-                            Sushi Food
+                            Jelly Ball
                         </div>
                     </h1>
 
                     <p class="home__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Kelezatan Tanpa Batas, Sensasi Meledak di setiap Gigitan
                     </p>
 
-                    <a href="#" class="button">
+                    <a href="shop.php" class="button">
                         Order Now
                         <i class="ri-arrow-right-line"></i>
                     </a>
@@ -102,27 +101,42 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <div class="about__container container">
-                    <div class="about__data">
-                        <span class="section__subtitle">About Us</span>
-                        <h2 class="section__title about__title">
-                            <div>
-                                We Provide
-                                <img src="landing page/assets/jelly.png" alt="about image">                            
-                            </div>
+            <div class="about__container container">
+                <div class="about__data">
+                <h2 class="section__title about__title">
+                    <div>
+                    About Us
+                    <img src="landing page/assets/jelly.png" alt="about image">
                     </div>
-
-                    Healthy Food
-                </h2>
-
-                <p class="about__description">
-                    Food comes to us from our relatives, whether they 
-                    have wings or roots. This is how we consider food, 
-                    it also has a culture. It has a history that passes 
-                    from generation to generation.
-                </p>
-                </div>
-
+            </h2>
+            <p class="about__description">
+                Our team tries their best to provide deliciousness in every bite of Yam Jelly Joy that you eat.
+            </p>
+        </div>
+        <div class="team__photos">
+            <div class="team__member box">
+                <img src="landing page/assets/adell.jpg" alt="Team Member 1" class="team__photo">
+                <p class="team__name">Adelia Langitan</p>
+                <p class="team__nim">220211060002</p>
+            </div>
+            <div class="team__member box">
+                <img src="landing page/assets/nad.jpg" alt="Team Member 2" class="team__photo">
+                <p class="team__name">Nadya Tangkere</p>
+                <p class="team__nim">220211060020</p>
+            </div>
+            <div class="team__member box">
+                <img src="landing page/assets/tesa.jpg" alt="Team Member 3" class="team__photo">
+                <p class="team__name">Yuliet Sompotan</p>
+                <p class="team__nim">220211060048</p>
+            </div>
+            <div class="team__member box">
+                <img src="landing page/assets/mikel.jpg" alt="Team Member 4" class="team__photo">
+                <p class="team__name">Michael Manoppo</p>
+                <p class="team__nim">220211060271</p>
+            </div>
+        </div>
+    </div>
+</section>
                 <img src="landing page/assets/bunga 1.png" alt="about image" class="about">
             </div>
 
@@ -131,15 +145,15 @@
 
             <!--==================== REVIEWS ====================-->
             <section class="reviews section" id="reviews">
-                <span class="section__subtitle">The Best Food</span>
-                <h2 class="section__title">Popular Dishes</h2>
+            <span class="section__subtitle">Best Reviews</span>
+            <h2 class="section__title">What our customers says..</h2>
 
                 <div class="reviews__container container grid">
                     <article class="reviews__card">
                         <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
 
-                        <h3 class="reviews__name">Onigiri</h3>
-                        <span class="reviews__description">Japanese Dish</span>
+                        <h3 class="reviews__name">Original Yam Jelly Joy</h3>
+                        <span class="reviews__description">The original taste. A combination of fruit, jelly and milk</span>
 
                         <span class="reviews__price">$10.99</span>
 
@@ -151,8 +165,8 @@
                     <article class="reviews__card">
                         <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
 
-                        <h3 class="reviews__name">Spring Rolls</h3>
-                        <span class="reviews__description">Japanese Dish</span>
+                        <h3 class="reviews__name">Extra Creamy Yam Jelly Joy</h3>
+                        <span class="reviews__description">Super Creamy because of produced by yogurt mixed with fruit and jelly</span>
 
                         <span class="reviews__price">$15.99</span>
 
@@ -164,8 +178,8 @@
                     <article class="reviews__card">
                         <img src="landing page/assets/produk 2.png" alt="reviews image" class="reviews__img">
 
-                        <h3 class="reviews__name">Sushi Rolls</h3>
-                        <span class="reviews__description">Japanese Dish</span>
+                        <h3 class="reviews__name">Royal Cheesy Yam Jelly Joy</h3>
+                        <span class="reviews__description">The perfect blend of fruit, jelly and savory cream cheese</span>
 
                         <span class="reviews__price">$19.99</span>
 
@@ -182,16 +196,16 @@
                     <div class="recently__data">
                         <span class="section__subtitle">Recently Added</span>
                         <h2 class="section__title">
-                            Sushi Samurai <br>
-                            Salmón Cheese
+                            SOUP <br>
+                            JELLY BALL
                         </h2>
 
                         <p class="recently__description">
-                            Take a look at what's new. And do not deprive 
-                            yourself of a good meal, enjoy and be happy.
+                        Rasakan kesegaran dan kelezatan di setiap gigitan. 
+                        Segera beli dan nikmati sensasi manis dan segar dari Soup Jelly Ball kami!
                         </p>
 
-                        <a href="#" class="button">
+                        <a href="shop.php" class="button">
                             Order Now <i class="ri-arrow-right-line"></i>
                         </a>
 
@@ -217,24 +231,21 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="landing page/img/profile-1.jpg">
-                                            <p>John Doe</p>
+                                            <p>Do Kyungsoo</p>
                                         </td>
                                         <td>14-08-2023</td>
                                         <td><span class="status completed">Completed</span></td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="landing page/img/profile-1.jpg">
-                                            <p>John Doe</p>
+                                            <p>Sehun</p>
                                         </td>
                                         <td>14-08-2023</td>
                                         <td><span class="status pending">Pending</span></td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="landing page/img/profile-1.jpg">
-                                            <p>John Doe</p>
+                                            <p>Kai</p>
                                         </td>
                                         <td>14-08-2023</td>
                                         <td><span class="status process">Processing</span></td>
@@ -263,9 +274,9 @@
                     </a>
 
                     <p class="footer__description">
-                        Food for the body is not <br>
-                        enough. There must be food <br>
-                        for the soul.
+                    Hanya memperhatikan makanan untuk tubuh tidaklah mencukupi. <br>
+                    Kita juga memerlukan asupan buah-buahan untuk kesehatan tubuh kita. <br>
+                    Mungkin soup buah jelly bisa menjadi pilihan yang sempurna sebagai hidangan penutup anda<br>
                     </p>
                 </div>
 
@@ -289,8 +300,8 @@
 
                         <ul class="footer__links">
                             <li class="footer__information">
-                                Av. Hacienda 1234 <br>
-                                Lima 4321, Perú 
+                                Jurusan Teknik Elektro <br>
+                                Unsrat, Manado 
                             </li>
 
                             <li class="footer__information">
