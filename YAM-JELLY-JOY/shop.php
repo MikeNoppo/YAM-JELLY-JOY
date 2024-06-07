@@ -1,3 +1,6 @@
+<?php
+require 'fungsi/insert_data.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +17,8 @@
         <table>
             <tr>
                 <td>
-                    <form>
+                    <!-- Menambahkan atribut action ke dalam tag <form> -->
+                    <form action="fungsi/insert_data.php" method="post">
                         <div class="product-details">
                             <h2 class="product-title">Jelly Ball Soup</h2>
                             <p class="product-description">Indulge in the exquisite taste of our jelly balls, crafted with the finest ingredients to tantalize your taste buds. Perfect for every occasion, our jelly balls are a delightful treat for everyone.</p>
@@ -37,7 +41,7 @@
                         <label for="phone_number">Phone Number:</label>
                         <input type="tel" id="phone_number" name="phone_number">
                         
-                        <button type="submit">Add to Cart</button>
+                        <button type="submit" name="submit_order">Add to Cart</button>
                     </form>
                 </td>
             </tr>

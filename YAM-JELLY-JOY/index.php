@@ -1,5 +1,5 @@
 <?php
-require 'ambil_dataOders.php';
+require 'fungsi/ambil_dataOders.php';
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ require 'ambil_dataOders.php';
                         </li>
 
                         <li class="nav__item">
-                            <a href="login admin.php" class="nav__link">Login as Admin</a>
+                            <a href="logreg.php" class="nav__link">Login as Admin</a>
                         </li>
 
                     </ul>

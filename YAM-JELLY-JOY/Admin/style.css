@@ -13,6 +13,31 @@
     --light-warning: #9f946d;
     --success: #a1d3c0;
 }
+.table .button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.table .button-edit {
+    background-color: green;
+}
+
+.table .button-delete {
+    background-color: red;
+}
+
+.table .button-edit:hover {
+    background-color: darkgreen;
+}
+
+.table .button-delete:hover {
+    background-color: darkred;
+}
+
 
 .moving-text {
     display: inline-block;
@@ -495,6 +520,7 @@ body{
 .content main .bottom-data .reminders .task-list li:last-child{
    margin-bottom: 0;
 }
+
 
 @media screen and (max-width: 768px) {
     .sidebar{

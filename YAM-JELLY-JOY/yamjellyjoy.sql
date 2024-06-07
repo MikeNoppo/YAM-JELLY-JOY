@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2024 at 03:39 PM
--- Server version: 10.11.2-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jun 07, 2024 at 11:42 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,8 +30,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
   `customer_name` varchar(255) NOT NULL,
-  `order_date` date NOT NULL,
-  `status` varchar(50) NOT NULL,
+  `order_date` date DEFAULT curdate(),
+  `status` varchar(50) NOT NULL DEFAULT 'pending',
   `address` text NOT NULL,
   `phone_number` varchar(20) NOT NULL,
   `quantity` int(11) NOT NULL
@@ -42,9 +42,10 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `customer_name`, `order_date`, `status`, `address`, `phone_number`, `quantity`) VALUES
-(1, 'indri', '2024-06-05', 'completed', 'universitas sam ratulangi', '081298677856', 1),
-(2, 'anggi', '2024-06-06', 'Pending', 'universitas sam ratulangi', '089757684657', 1),
-(3, 'tessa', '2024-06-05', 'Pending', 'Kost H2', '089768574635', 1);
+(2, 'anggi BOTAK', '2024-06-06', 'Pending', 'universitas sam ratulangi', '089757684657', 12),
+(3, 'tessa', '2024-06-05', 'Pending', 'Kost H2', '089768574635', 1),
+(4, 'Adellsd', '2024-06-07', 'pending', 'karombasan atas', '089887987665', 2),
+(7, 'REWAN', '2024-06-07', 'pending', 'minut', '083546778912', 1);
 
 -- --------------------------------------------------------
 
@@ -66,8 +67,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `user_type`) VALUES
 (1, 'mikel', 'mikelnoppo03@gmail.com', '$2y$10$PM0S1IR.xcJeCKXsu8hDDeWLgwL5D3pCaMHXFB1VAtaa0TSbYiETq', 'admin'),
-(2, 'wewe', 'adelclangitan@gmail.com', '$2y$10$5ByGTM9NTdSPxvRdBzg9f.kp3bD9Fcnw0y5AsMKSVsceGNe2NwBzW', 'admin'),
-(3, 'clara', 'adellangitan@gmail.com', '$2y$10$9dOvSvgO6tf6qfk04LyS.eP8D/FLVUA.iCrBidyNPcP1dvu3LBRiu', 'admin');
+(2, 'adel', 'adelclara@gmai.com', '$2y$10$w62oNEl31XltInQ2UhjBhOcrkvOiLkLVW0uLjTa473Ev8XTQwgqRG', 'user'),
+(3, 'tessa ', 'yuliet@sompotan.com', '$2y$10$XhMYfm3jczaQyACHn9Qy2O899JW.JPeZBdjoWaFj.t80GHfEYXnEG', 'admin'),
+(11, 'Michael', 'michaelmanoppo026@student.unsrat.ac.id', '$2y$10$/zMAq39DEyVuwtBarjOypuedmHVKwSapp7AODGLDxSFz6EjzVaCbK', 'user');
 
 --
 -- Indexes for dumped tables
@@ -94,13 +96,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

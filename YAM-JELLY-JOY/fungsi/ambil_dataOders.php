@@ -1,7 +1,7 @@
 <?php
 require 'connect_db.php';
 // Fetch orders data
-$sql = "SELECT customer_name, order_date, status, quantity FROM orders";
+$sql = "SELECT * FROM orders";
 $result = $conn->query($sql);
 
 $orders = [];

@@ -1,12 +1,15 @@
+<?php
+require '../fungsi/ambil_dataOders.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link href="img/logo yamjellyjoy.png" rel="icon">
+    <link href="../img/logo yamjellyjoy.png" rel="icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="Admin/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>YAM JELLYJOY - Dashboard</title>
 </head>
 
@@ -19,11 +22,10 @@
         </a>
         <ul class="side-menu">
             <li class="active"><a href="#"><i class='bx bxs-dashboard' ></i>Dashboard</a></li>
-            <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
         </ul>
         <ul class="side-menu">
             <li>
-                <a href="index.php" class="logout">
+                <a href="../index.php" class="logout">
                     <i class='bx bx-log-out-circle'></i>
                     Log out
                 </a>
@@ -50,7 +52,7 @@
                 <span class="count">12</span>
             </a>
             <a href="#" class="profile">
-                <img src="Admin/images/profile-1.jpg">
+                <img src="images/profile-1.jpg">
             </a>
         </nav>
 
@@ -64,49 +66,40 @@
             <!-- moving text -->
 
             <div class="bottom-data">
-                <div class="orders">
-                    <div class="header">
-                        <i class='bx bx-receipt'></i>
-                        <h3>Recent Orders</h3>
-                        <i class='bx bx-filter'></i>
-                        <i class='bx bx-search'></i>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User</th>
-                                <th>Order Date</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="Admin/images/profile-1.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>14-08-2023</td>
-                                <td><span class="status completed">Completed</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="Admin/images/profile-1.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>14-08-2023</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="Admin/images/profile-1.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>14-08-2023</td>
-                                <td><span class="status process">Processing</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="orders">
+        <div class="orders__header">
+            <i class='bx bx-receipt'></i>
+            <h3>Recent Orders</h3>
+            <i class='bx bx-filter'></i>
+            <i class='bx bx-search'></i>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Order Date</th>
+                    <th>Status</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($orders as $order):
+                ?>
+                <tr>
+                    <td><p><?php echo htmlspecialchars($order['customer_name']); ?></p></td>
+                    <td><?php echo htmlspecialchars($order['order_date']); ?></td>
+                    <td><span class="status <?php echo strtolower(htmlspecialchars($order['status'])); ?>"><?php echo htmlspecialchars($order['status']); ?></span></td>
+                    <td><?php echo htmlspecialchars($order['quantity']); ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <a class="button__recently">
+            Tersisa ... 
+        </a>
+    </div>
+
 
                 <!-- Reminders -->
                 <div class="reminders">
@@ -140,8 +133,60 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- End of Reminders-->
+
+
+                <div class="orders">
+    <div class="orders__header">
+        <i class='bx bx-receipt'></i>
+        <h3>Details Orders</h3>
+        <i class='bx bx-filter'></i>
+        <i class='bx bx-search'></i>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Order Date</th>
+                <th>Status</th>
+                <th>Quantity</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            foreach ($orders as $order):
+                $customer_name = htmlspecialchars($order['customer_name']);
+                $order_date = htmlspecialchars($order['order_date']);
+                $status = htmlspecialchars($order['status']);
+                $quantity = htmlspecialchars($order['quantity']);
+                $address = htmlspecialchars($order['address']);
+                $phone_number = htmlspecialchars($order['phone_number']);
+                $id = htmlspecialchars($order['id']);
+            ?>
+            <tr>
+                <td><p><?php echo $customer_name; ?></p></td>
+                <td><?php echo $order_date; ?></td>
+                <td><span class="status <?php echo strtolower($status); ?>"><?php echo $status; ?></span></td>
+                <td><?php echo $quantity; ?></td>
+                <td><?php echo $address; ?></td>
+                <td><?php echo $phone_number; ?></td>
+                <td>
+                    <a href="../fungsi/edit_order.php?id=<?php echo $id; ?>" class="tombol button-edit">EDIT |</a>
+                    <a href="../fungsi/delete_order.php?id=<?php echo $id; ?>" class="tombol button-delete">DELETE</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <a class="button__recently">
+        Tersisa ... 
+    </a>
+</div>
+
+
 
             </div>
 
@@ -149,7 +194,7 @@
 
     </div>
 
-    <script src="Admin/index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
